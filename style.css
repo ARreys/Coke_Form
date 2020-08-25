@@ -1,0 +1,269 @@
+/* -----------------------------------*/
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(fonts/Montserrat/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-ExtraLight;
+    src: url(fonts/Montserrat/Montserrat-ExtraLight.ttf);
+}
+
+
+/* -----------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    height: 100%;
+    display: block;
+    border: 0;
+    background: -webkit-linear-gradient(-135deg, #dd1515, #ffffff);
+    background: -o-linear-gradient(-135deg, #dd1515, #ffffff);
+    background: -moz-linear-gradient(-135deg, #dd1515, #ffffff);
+    background: linear-gradient(to bottom, #dd1515, #ffffff);
+}
+
+.formulario {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    width: auto;
+    min-height: 100vh;
+}
+
+.teste {
+    border-radius: 25px;
+    box-shadow: 0 0 2px 0 black, 0 0 20px 0 black;
+    display: flex;
+    margin: auto;
+    background: white;
+    width: 600px;
+    height: 450px;
+}
+
+.teste form {
+    border-radius: 25px;
+    padding-bottom: 20px;
+    background: white;
+    width: 310px;
+    height: 400px;
+}
+
+
+/* -----------------------------------*/
+
+h1 {
+    font-family: Montserrat-Bold;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 50px;
+    padding: 0;
+}
+
+h2 {
+    font-family: Montserrat-Bold;
+    font-size: 0.2rem;
+}
+
+
+/* -----------------------------------*/
+
+
+/* -----------------------------------*/
+
+.nome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 210px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 210px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.senha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 210px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* -----------------------------------*/
+
+
+/* CHECKBOX */
+
+.container {
+    display: block;
+    position: relative;
+    height: 30px;
+    width: 210px;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-left: 45px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default checkbox */
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+/* Create a custom checkbox */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 6;
+    height: 10px;
+    width: 10px;
+    background-color: #eee;
+    border-radius: 8px;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+
+/* When the checkbox is checked, add a blue background */
+
+.container input:checked~.checkmark {
+    background-color: #dd1515;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the checkmark when checked */
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+
+/* Style the checkmark/indicator */
+
+.container .checkmark:after {
+    left: 3px;
+    top: 3px;
+    width: 2px;
+    height: 2px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/* -----------------------------------*/
+
+
+/* -----------------------------------*/
+
+input {
+    font-size: .5rem;
+    padding: 8px;
+    width: 190px;
+    height: 30px;
+    border-radius: 20px;
+    border-style: none;
+    outline: none;
+    background-color: #e6e6e6;
+    transition: 0.4s;
+}
+
+input:focus {
+    width: 200px;
+    box-shadow: 0 0 5px 0 red;
+}
+
+
+/* -----------------------------------*/
+
+
+/* -----------------------------------*/
+
+.button button {
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 8px;
+    height: 30px;
+    width: 160px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(206, 99, 99);
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+button:hover {
+    background: #dd1515;
+    box-shadow: 0 0 5px 0 #dd1515, 0 0 10px 0 #dd1515, 0 0 15px 0 #dd1515;
+    opacity: 0.9;
+}
+
+
+/* -----------------------------------*/
+
+
+/* -----------------------------------*/
+
+.form-image {
+    margin: 0;
+    height: 100%;
+    width: 50%;
+    border-radius: 0px 25px 25px 0px;
+    object-fit: cover;
+}
+
+
+/* -----------------------------------*/

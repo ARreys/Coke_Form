@@ -3,6 +3,6 @@
 
 - Screenshots
 
-![Screenshot](Readme/Shot1.png).
+![Screenshot](Readme/Shot1.png)
 
-![Screenshot_1](Readme/Shot2.png).
+![Screenshot_1](Readme/Shot2.png)

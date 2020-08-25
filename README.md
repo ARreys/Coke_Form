@@ -2,7 +2,7 @@
 ## This is a simple sing-up form, COKE theme 😜 
   - Made with (Html, Css)
 
-- Screenshots
+## Screenshots
 
 ![Screenshot](Readme/Shot1.png)
 
